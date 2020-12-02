@@ -1,0 +1,223 @@
+.sectionMain {
+  font-family: "Roboto", sans-serif;
+  background-image: url(./../images/main.jpg);
+  padding: 20px 0 0 10vw;
+  height: 650px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.sectionMain__header {
+  display: flex;
+  padding-right: 18vw;
+  justify-content: space-between;
+  color: white;
+  margin-bottom: 160px;
+  align-items: baseline;
+  height: 40px;
+}
+.sectionMain__header_nav {
+  display: flex;
+  align-items: baseline;
+  width: -webkit-fill-available;
+  justify-content: space-between;
+}
+.sectionMain__header_nav_menu {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 100px;
+  align-items: baseline;
+}
+.sectionMain__header_nav_menu_link {
+  text-transform: capitalize;
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 3px;
+  border: transparent 1px solid;
+  white-space: nowrap;
+}
+.sectionMain__header_nav_menu_link:hover {
+  border-color: white;
+}
+.sectionMain__header_buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.sectionMain__title {
+  font-size: 3em;
+  color: white;
+  width: 48vw;
+}
+.sectionMain__content {
+  background-color: #FDFEFF;
+  display: flex;
+  padding: 100px;
+  justify-content: space-between;
+}
+.sectionMain__content_item {
+  width: 263px;
+  margin-right: 50px;
+}
+.sectionMain__content_item_title {
+  text-transform: capitalize;
+  margin-bottom: 30px;
+}
+.sectionMain__content_item_text {
+  line-height: 2;
+  margin-bottom: 40px;
+}
+.sectionMain__content_item_icon {
+  height: 60px;
+}
+
+.toggle-lable {
+  display: none;
+  font-size: 32px;
+  text-align: right;
+  color: white;
+}
+
+#toggle {
+  display: none;
+}
+
+@media screen and (max-width: 1150px) {
+  .sectionMain {
+    padding-left: 5vw;
+  }
+  .sectionMain__header {
+    padding-right: 5vw;
+  }
+  .sectionMain__header_nav_menu {
+    margin-left: 20px;
+  }
+  .sectionMain__title {
+    width: 60vw;
+  }
+  .sectionMain__content {
+    padding: 50px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .sectionMain__header {
+    margin-bottom: 108px;
+  }
+  .sectionMain__header_nav {
+    display: none;
+    text-align: right;
+    background-color: black;
+    min-width: max-content;
+    width: auto;
+  }
+  .sectionMain__header_nav_menu {
+    flex-direction: column;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+  }
+  .sectionMain__header_nav_menu_link {
+    display: flex;
+    line-height: 50px;
+    width: -webkit-fill-available;
+    justify-content: center;
+    padding: 0 20px;
+  }
+  .sectionMain__header_buttons {
+    flex-direction: column;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+  }
+  .sectionMain__title {
+    font-size: 1.5em;
+  }
+  .sectionMain__content {
+    padding: 50px;
+    display: block;
+  }
+  .sectionMain__content_item {
+    width: auto;
+    margin-right: 0;
+  }
+
+  .toggle-lable {
+    display: block;
+    cursor: pointer;
+    margin-left: 38vw;
+  }
+
+  #toggle:checked + .sectionMain__header_nav {
+    display: block;
+  }
+
+  #toggle:checked + .toggle-lable {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .toggle-lable {
+    margin-left: 0;
+  }
+
+  .sectionMain__content {
+    padding: 20px;
+  }
+  .sectionMain__content_item {
+    margin-bottom: 20px;
+  }
+  .sectionMain__content_item_text {
+    line-height: 1.5;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .sectionMain__content_item_icon {
+    height: 30px;
+  }
+}
+.fundcap {
+  font-weight: 900;
+  text-transform: capitalize;
+  font-size: 2em;
+  letter-spacing: 1px;
+}
+
+.freeTrial {
+  margin: 30px 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-color: white;
+  border: none;
+  padding: 20px 45px;
+  font-weight: 700;
+  font-size: 1em;
+}
+.freeTrial:hover {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+
+@media screen and (max-width: 600px) {
+  .freeTrial {
+    padding: 10px 25px;
+  }
+}
+body,
+button,
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=main.css.map */
